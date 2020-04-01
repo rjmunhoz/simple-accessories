@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "simpleaccessories",
+  "version": "${version}",
+  "name": "Simple Accessories",
+  "description": "A mod that adds new, Simple accessories that give nice extra powers",
+  "authors": [
+    "Rogério Munhoz <roz@rjmunhoz.me>"
+  ],
+  "contact": {
+    "homepage": "https://about.rjmunhoz.me"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/simpleaccessories/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "rjmunhoz.simpleaccessories.SimpleAccessories"
+    ],
+    "modmenu": [
+      "rjmunhoz.simpleaccessories.SimpleAccessoriesMenuEntry"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.7.8+build.189",
+    "fabric": "*",
+    "minecraft": "1.15.2"
+  }
+}
