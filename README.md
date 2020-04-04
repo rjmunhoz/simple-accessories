@@ -2,7 +2,7 @@
 Simple Accessories Mod
 ---
 
-[![](https://cf.way2muchnoise.eu/title/373156.svg "Available on CurseForge")](https://www.curseforge.com/minecraft/mc-mods/simple-accessories-fabric)
+[![](http://cf.way2muchnoise.eu/title/373156.svg "Available on CurseForge")](https://www.curseforge.com/minecraft/mc-mods/simple-accessories-fabric)
 
 This adds simple yet powerful magic accessories to Minecraft.
 
