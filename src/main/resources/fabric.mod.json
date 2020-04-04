@@ -5,7 +5,7 @@
   "name": "Simple Accessories",
   "description": "A mod that adds new, Simple accessories that give nice extra powers",
   "authors": [
-    "Rogério Munhoz <roz@rjmunhoz.me>"
+    "rjmunhoz"
   ],
   "contact": {
     "homepage": "https://about.rjmunhoz.me"
@@ -16,14 +16,12 @@
   "entrypoints": {
     "main": [
       "rjmunhoz.simpleaccessories.SimpleAccessories"
-    ],
-    "modmenu": [
-      "rjmunhoz.simpleaccessories.SimpleAccessoriesMenuEntry"
     ]
   },
   "depends": {
     "fabricloader": ">=0.7.8+build.189",
     "fabric": "*",
-    "minecraft": "1.15.2"
+    "minecraft": "1.15.2",
+    "trinkets": "2.4.1"
   }
 }
