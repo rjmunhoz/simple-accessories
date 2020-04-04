@@ -1,15 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " # ",
-    " * ",
-    "   "
+    "#NS",
+    " W "
   ],
   "key": {
     "#": {
       "item": "minecraft:redstone"
     },
-    "*": {
+    "N": {
+      "item": "minecraft:nether_wart"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "W": {
       "item": "simpleaccessories:gemless_ring"
     }
   },

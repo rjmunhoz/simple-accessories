@@ -1,17 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "GGG",
-    "G G",
-    "GGG"
+    " # ",
+    "#g#",
+    "###"
   ],
   "key": {
-    "G": {
+    "#": {
+      "item": "minecraft:white_wool"
+    },
+    "g": {
       "item": "minecraft:gold_ingot"
     }
   },
   "result": {
-    "item": "simpleaccessories:gemless_ring",
+    "item": "simpleaccessories:regular_cloak",
     "count": 1
   }
 }

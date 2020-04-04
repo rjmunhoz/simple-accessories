@@ -4,7 +4,6 @@ import net.minecraft.entity.effect.StatusEffects;
 
 public class SpeedRing extends BaseRing {
   public SpeedRing() {
-    super("speed_ring");
-    this.setEffect(StatusEffects.SPEED);
+    super("speed_ring", StatusEffects.SPEED);
   }
 }

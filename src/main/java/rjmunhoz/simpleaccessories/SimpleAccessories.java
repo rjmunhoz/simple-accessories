@@ -8,11 +8,11 @@ import net.minecraft.util.Identifier;
 import rjmunhoz.simpleaccessories.items.Items;
 
 public class SimpleAccessories implements ModInitializer {
-    public static String MOD_ID = "simpleaccessories";
+  public static String MOD_ID = "simpleaccessories";
 
-    @Override
-    public void onInitialize() {
-        Items.register();
-        TrinketSlots.addSlot(SlotGroups.HAND, Slots.RING, new Identifier("trinkets", "textures/item/empty_trinket_slot_ring.png"));
-    }
+  @Override
+  public void onInitialize() {
+    Items.register();
+    TrinketSlots.addSlot(SlotGroups.HAND, Slots.RING, new Identifier("trinkets", "textures/item/empty_trinket_slot_ring.png"));
+  }
 }

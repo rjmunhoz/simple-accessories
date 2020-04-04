@@ -1,5 +1,7 @@
 {
   "item.simpleaccessories.gemless_ring": "Gemless Ring",
   "item.simpleaccessories.speed_ring": "Speed Ring",
-  "item.simpleaccessories.invisibility_ring": "Speed Ring"
+  "item.simpleaccessories.invisibility_cloak": "Invisibility Cloak",
+  "item.simpleaccessories.regular_cloak": "Regular Cloak",
+  "itemGroup.simpleaccessories.general": "Simple Accessories"
 }
