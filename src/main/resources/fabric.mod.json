@@ -18,6 +18,12 @@
   "entrypoints": {
     "main": [
       "rjmunhoz.simpleaccessories.SimpleAccessories"
+    ],
+    "modmenu": [
+      "rjmunhoz.simpleaccessories.config.ConfigScreen"
+    ],
+    "client": [
+      "rjmunhoz.simpleaccessories.SimpleAccessoriesClient"
     ]
   },
   "depends": {

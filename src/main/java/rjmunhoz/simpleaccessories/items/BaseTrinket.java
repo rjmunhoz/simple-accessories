@@ -4,6 +4,7 @@ import dev.emi.trinkets.api.ITrinket;
 import dev.emi.trinkets.api.TrinketSlots;
 import dev.emi.trinkets.api.TrinketSlots.SlotGroup;
 import dev.emi.trinkets.api.TrinketsApi;
+import me.sargunvohra.mcmods.autoconfig1u.AutoConfig;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.player.PlayerEntity;
@@ -15,6 +16,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 import rjmunhoz.simpleaccessories.SimpleAccessories;
+import rjmunhoz.simpleaccessories.config.ModConfig;
 
 import java.util.Optional;
 
@@ -32,6 +34,8 @@ public abstract class BaseTrinket extends Item implements ITrinket {
 
   private boolean isCraftingOnly = false;
 
+  private ModConfig config;
+
   public BaseTrinket(String id, String group, String slot, Optional<StatusEffect> effect) {
     super(new Item.Settings().group(Items.ITEM_GROUP).maxDamage(5000));
     this.id = id;
@@ -41,6 +45,7 @@ public abstract class BaseTrinket extends Item implements ITrinket {
       this.effect = statusEffect;
       this.hasEffect = true;
     });
+    this.config = AutoConfig.getConfigHolder(ModConfig.class).getConfig();
   }
 
   public Identifier getIdentifier() {
@@ -96,7 +101,6 @@ public abstract class BaseTrinket extends Item implements ITrinket {
       if (slot == -1) {
         return;
       }
-      ;
 
       trinketsInventory.setInvStack(slot, ItemStack.EMPTY);
       trinketsInventory.markDirty();
@@ -110,7 +114,7 @@ public abstract class BaseTrinket extends Item implements ITrinket {
       return;
     }
 
-    this.damage += 0.005;
+    this.damage += this.config.getDecayRate();
   }
 
   public BaseTrinket setDamageable(boolean damageable) {

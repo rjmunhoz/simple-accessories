@@ -1,0 +1,11 @@
+{
+  "item.simpleaccessories.gemless_ring": "Anel Básico",
+  "item.simpleaccessories.speed_ring": "Anel de Velocidade",
+  "item.simpleaccessories.invisibility_cloak": "Capa de invisibilidade",
+  "item.simpleaccessories.regular_cloak": "Capa Comum",
+  "itemGroup.simpleaccessories.general": "Simple Accessories",
+  "text.autoconfig.simpleaccessories.title": "Simple Accessories - Configurações",
+  "text.autoconfig.simpleaccessories.option.ticksToLive": "Taxa de deteriorização dos acessórios",
+  "text.autoconfig.simpleaccessories.option.ticksToLive.@Tooltip": "Quantos ticks os acessórios demoram para perder 1 ponto de durabilidade",
+  "key.simpleaccessories.config": "Abrir configurações"
+}
