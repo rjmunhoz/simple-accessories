@@ -30,6 +30,6 @@
     "fabricloader": ">=0.7.8+build.189",
     "fabric": "*",
     "minecraft": "1.15.2",
-    "trinkets": "2.4.1"
+    "trinkets": ">=2.4.1"
   }
 }
