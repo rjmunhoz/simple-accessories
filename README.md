@@ -11,6 +11,12 @@ Currently, there are two accessories:
 - The Speed Ring: Gives you Speed 1 while equiped
 - The Invisibility Cloak: Gives you invisibility while equipped
 
+## Texture Credits
+
+All the textures are made by [zxmbiegrrl](https://www.curseforge.com/members/zxmbiegrrl/projects).
+
+Thank you so much!
+
 ## Recipes
 
 ### Rings

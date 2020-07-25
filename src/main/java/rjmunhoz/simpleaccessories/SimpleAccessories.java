@@ -18,7 +18,5 @@ public class SimpleAccessories implements ModInitializer {
     AutoConfig.register(ModConfig.class, GsonConfigSerializer::new);
     Items.register();
     TrinketSlots.addSlot(SlotGroups.HAND, Slots.RING, new Identifier("trinkets", "textures/item/empty_trinket_slot_ring.png"));
-
-
   }
 }

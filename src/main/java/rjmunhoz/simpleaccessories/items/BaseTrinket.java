@@ -1,6 +1,7 @@
 package rjmunhoz.simpleaccessories.items;
 
-import dev.emi.trinkets.api.ITrinket;
+import dev.emi.trinkets.api.PlayerTrinketComponent;
+import dev.emi.trinkets.api.TrinketItem;
 import dev.emi.trinkets.api.TrinketSlots;
 import dev.emi.trinkets.api.TrinketSlots.SlotGroup;
 import dev.emi.trinkets.api.TrinketsApi;
@@ -11,6 +12,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.TypedActionResult;
@@ -20,7 +22,7 @@ import rjmunhoz.simpleaccessories.config.ModConfig;
 
 import java.util.Optional;
 
-public abstract class BaseTrinket extends Item implements ITrinket {
+public abstract class BaseTrinket extends TrinketItem {
   private String id;
 
   private double damage = 0;
@@ -56,11 +58,6 @@ public abstract class BaseTrinket extends Item implements ITrinket {
   public boolean canWearInSlot(String group, String slot) {
     if (this.isCraftingOnly) return false;
     return (group.equals(this.group)) && (slot.equals(this.slot));
-  }
-
-  @Override
-  public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
-    return ITrinket.equipTrinket(player, hand);
   }
 
   @Override
@@ -102,7 +99,7 @@ public abstract class BaseTrinket extends Item implements ITrinket {
         return;
       }
 
-      trinketsInventory.setInvStack(slot, ItemStack.EMPTY);
+      trinketsInventory.setStack(slot, ItemStack.EMPTY);
       trinketsInventory.markDirty();
       return;
     }
